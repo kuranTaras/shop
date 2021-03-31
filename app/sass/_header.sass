@@ -1,0 +1,202 @@
+.header
+  width: 100%
+  position: absolute
+  top: 0
+  z-index: 3
+  .container
+    padding: 35px 36px 0 32.8px
+    justify-content: space-between
+    @media (max-width: 1024px)
+      padding: 35px 10px 0 10px
+    @media (max-width: 834px)
+      padding: 25px 15px 0 15px
+    @media (max-width: 600px)
+      flex-direction: column-reverse
+      padding: 0
+      position: relative
+    .header__left
+      display: flex
+      align-items: center
+      width: 100%
+      max-width: 753px
+      @media (max-width: 834px)
+        max-width: 577px
+      @media (max-width: 600px)
+        padding: 17px 11px 0 11px
+      .header__logo
+        min-width: 64px
+        min-height: 64px
+        max-width: 64px
+        max-height: 64px
+        overflow: hidden
+        border-radius: 50%
+        margin-right: 46px
+        display: block
+        @media (max-width: 1024px)
+          margin-right: 10px
+        @media (max-width: 834px)
+          min-width: 45px
+          min-height: 45px
+          max-width: 45px
+          max-height: 45px
+          margin-bottom: auto
+          margin-right: 20px
+        @media (max-width: 600px)
+          min-width: 33px
+          min-height: 33px
+          max-width: 33px
+          max-height: 33px
+          position: absolute
+          top: 15px
+          left: 10px
+          z-index: 1
+          margin-right: 0
+        img
+          width: 100%
+          height: 100%
+          object-fit: contain
+      .header__search
+        display: flex
+        flex-direction: column
+        width: 100%
+        span
+          font-family: Open Sans, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 24px
+          line-height: 137.5%
+          color: $cWhite
+          margin-bottom: 14px
+          @media (max-width: 600px)
+            font-size: 16px
+        .header__form
+          display: flex
+          border-radius: 80px
+          overflow: hidden
+          input
+            width: 100%
+            padding: 7px 20px
+            font-family: Open Sans, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 135.7%
+            background-color: $cGray6
+            color: $cBlack05
+            @media (max-width: 600px)
+              font-size: 12px
+              padding: 7px 0 10px 20px
+          button
+            cursor: pointer
+            padding: 4px 17px 5px 17px
+            background-color: $cGray6
+            img
+              width: 22px
+              height: 24px
+              object-fit: contain
+    .header__right
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      position: relative
+      @media (max-width: 1024px)
+        margin-left: 40px
+      @media (max-width: 834px)
+        margin-left: 0
+        margin-bottom: auto
+        padding-right: 28px
+      @media (max-width: 600px)
+        background-color: #ffffff
+        padding: 20px 39px 9px 11px
+      .header__links
+        display: flex
+        @media (max-width: 834px)
+          position: absolute
+          flex-direction: column
+          transform: translateY(100%)
+          bottom: 0
+          transition-duration: 0.5s
+          max-height: 0px
+          overflow: hidden
+        @media (max-width: 600px)
+          background-color: #ffffff
+          width: 100%
+          left: 0
+        a
+          &:not(:last-child)
+            margin-right: 24px
+            @media (max-width: 834px)
+              margin-right: 0
+              margin-bottom: 10px
+          font-family: Open Sans, sans-serif
+          text-align: center
+          white-space: nowrap
+          font-style: normal
+          font-weight: bold
+          font-size: 14px
+          line-height: 135.7%
+          color: $cWhite
+          @media (max-width: 1024px)
+            white-space: normal
+          @media (max-width: 834px)
+            white-space: nowrap
+          @media (max-width: 600px)
+            color: $cDarkBlue
+      .header__menu_active
+        padding-bottom: 10px
+      .header__basket
+        margin-left: auto
+        margin-bottom: 6px
+        display: flex
+        align-items: center
+        white-space: nowrap
+        position: relative
+        svg
+          margin-right: 11px
+          path
+            @media (max-width: 600px)
+              fill: $cDarkBlue
+        p,span
+          padding: 2.5px 0
+          font-family: Open Sans, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 14px
+          line-height: 135.7%
+          color: $cWhite
+          @media (max-width: 600px)
+            color: $cDarkBlue
+        .header__product-counter
+          background-color: $cWhite
+          border-radius: 50%
+          color: $cPink
+          position: absolute
+          width: 20px
+          height: 20px
+          display: flex
+          justify-content: center
+          top: -10px
+          left: -10px
+          padding: 0
+      .header__burger
+        display: none
+        position: absolute
+        right: 0
+        top: 4px
+        cursor: pointer
+        @media (max-width: 834px)
+          display: block
+        @media (max-width: 600px)
+          top: inherit
+          bottom: 18px
+          right: 11px
+        svg
+          path
+            @media (max-width: 600px)
+              fill: $cDarkBlue
+
+
+
+
+
+

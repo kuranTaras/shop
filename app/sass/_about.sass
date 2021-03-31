@@ -1,0 +1,74 @@
+.about
+  background-color: $cDarkBlue
+  padding: 0 20px
+  .container
+    max-width: 1004px
+    flex-direction: column
+    padding: 37px 0 68.1px 0
+    @media (max-width: 834px)
+      padding: 41px 0 12.7px 0
+    @media (max-width: 600px)
+      padding: 90px 0 74px 0
+    h1
+      font-family: Open Sans, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 24px
+      line-height: 137.5%
+      text-align: center
+      color: $cWhite
+      margin-bottom: 80px
+      @media (max-width: 834px)
+        margin-bottom: 25px
+    .about__pluses
+      margin: 0 auto
+      .about__pluses-wrapper
+        display: flex
+        flex-wrap: wrap
+        margin-left: -48px
+        @media (max-width: 834px)
+          margin-left: -72px
+          max-width: 516px
+        @media (max-width: 600px)
+          margin-left: 0
+          max-width: 100%
+          flex-wrap: nowrap
+          flex-direction: column
+        .about__plus
+          display: flex
+          flex-direction: column
+          width: calc(25% - 48px)
+          margin-left: 48px
+          @media (max-width: 834px)
+            width: calc(50% - 72px)
+            margin-left: 72px
+            margin-bottom: 20px
+          @media (max-width: 600px)
+            width: 100%
+            max-width: 187px
+            margin-left: 0
+            margin-bottom: 16px
+          img
+            margin: 0 auto
+          h4
+            font-family: Open Sans, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 22px
+            color: $cWhite
+            text-align: center
+            margin: 13px 0
+            @media (max-width: 600px)
+              font-size: 13.9px
+              margin: 11.2px 0
+          p
+            font-family: Open Sans, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 135.7%
+            text-align: center
+            color: #F7F8FF
+            @media (max-width: 600px)
+              font-size: 12.1px

@@ -1,0 +1,225 @@
+.footer
+  .container
+    @media (max-width: 834px)
+      flex-direction: column-reverse
+    .footer__left
+      width: 100%
+      max-width: 285px
+      padding: 27px 23px 10px 23px
+      background-color: #ffffff
+      display: flex
+      flex-direction: column
+      @media (max-width: 834px)
+        flex-direction: row
+        justify-content: space-between
+        max-width: 100%
+        padding: 27px 34px 15px 34px
+      @media (max-width: 600px)
+        flex-direction: column-reverse
+        padding: 22px 0 21px 0
+      .footer__about
+        display: flex
+        flex-direction: column
+        @media (max-width: 600px)
+          align-items: center
+          margin-top: 31px
+        .footer__logo
+          max-width: 216px
+          height: 35px
+          display: flex
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        p
+          font-family: Open Sans, sans-serif
+          font-style: italic
+          font-weight: normal
+          font-size: 16px
+          line-height: 137.5%
+          margin-top: 13px
+          color: $cBlack0
+      .footer__feedback
+        margin-top: auto
+        display: flex
+        flex-direction: column
+        @media (max-width: 600px)
+          align-items: center
+        .footer__phone
+          margin-top: auto
+          display: flex
+          align-items: center
+          span
+            margin-left: 11px
+            font-family: Open Sans, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 135.7%
+            color: $cBlack0
+        .footer__socials
+          display: flex
+          align-items: center
+          margin-top: 10px
+          span
+            font-family: Open Sans, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 135.7%
+            color: $cDarkBlue
+            margin-right: 8px
+          .footer__social-links
+            display: flex
+            a
+              &:not(:last-child)
+                margin-right: 8px
+    .footer__right
+      display: flex
+      flex-direction: column
+      width: 100%
+      padding: 27px 36px 10px 36px
+      background-color: $cDarkBlue
+      @media (max-width: 834px)
+        padding: 25px 34px 18px 38px
+      @media (max-width: 600px)
+        padding: 47px 0 38px 0
+      .footer__top
+        display: flex
+        flex-direction: column
+        margin-bottom: 87px
+        @media (max-width: 834px)
+          margin-bottom: 44px
+        @media (max-width: 600px)
+          margin-bottom: 0
+        h2
+          font-family: Open Sans, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 16px
+          line-height: 137.5%
+          margin-bottom: 20px
+          color: $cWhite
+          @media (max-width: 600px)
+            margin: 0 auto 20px auto
+        .footer__links-all
+          display: flex
+          justify-content: space-between
+          @media (max-width: 600px)
+            flex-direction: column
+          .footer__links
+            display: flex
+            margin-right: 32px
+            @media (max-width: 600px)
+              flex-direction: column
+              margin: 0 auto 43px auto
+              align-items: center
+            .footer__links-column
+              &:not(:last-child)
+                margin-right: 32px
+                @media (max-width: 600px)
+                  margin-right: 0
+              display: flex
+              flex-direction: column
+              @media (max-width: 600px)
+                align-items: center
+              a
+                &:before
+                  content: ''
+                  position: absolute
+                  left: 0
+                  top: -2.5px
+                  width: 24px
+                  height: 24px
+                  background-image: url("../img/footer/40.png")
+                  background-repeat: no-repeat
+                  background-position: center
+                &:not(:last-child)
+                  margin-bottom: 2px
+                  @media (max-width: 600px)
+                    margin-bottom: 4.5px
+                &:hover
+                  color: $cPink
+                transition-duration: 0.3s
+                padding-left: 24px
+                position: relative
+                font-family: Open Sans, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 135.7%
+                color: $cWhite
+        .footer__contact
+          display: flex
+          flex-direction: column
+          margin-right: 32px
+          @media (max-width: 1024px)
+            margin-right: 0
+          @media (max-width: 600px)
+            margin: 0 auto 43px auto
+            align-items: center
+          h5
+            font-family: Open Sans, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 14px
+            line-height: 135.7%
+            color: $cWhite
+            margin-bottom: 9px
+          span
+            margin-bottom: 9px
+            font-family: Open Sans, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 135.7%
+            color: $cWhite
+        .footer__payments
+          display: flex
+          flex-direction: column
+          margin-top: auto
+          @media (max-width: 1024px)
+            display: none
+          .footer__payments-top
+            display: flex
+            width: 174px
+            height: 40px
+            margin-bottom: 6px
+            img
+              width: 100%
+              height: 100%
+              object-fit: contain
+          .footer__payments-bottom
+            display: flex
+            align-items: center
+            img
+              width: 63px
+              height: 34px
+            p
+              font-family: Open Sans, sans-serif
+              font-style: normal
+              font-weight: bold
+              font-size: 10px
+              line-height: 140%
+              margin-left: 7px
+              color: $cWhite
+      .footer__bottom
+        display: flex
+        @media (max-width: 834px)
+          margin-left: auto
+        @media (max-width: 600px)
+          flex-direction: column
+          margin-left: 0
+          align-items: center
+        span
+          &:not(:last-child)
+            margin-right: 18px
+            @media (max-width: 600px)
+              margin-right: 0
+              margin-bottom: 18px
+          font-family: Open Sans, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 14px
+          line-height: 135.7%
+          color: $cWhite
